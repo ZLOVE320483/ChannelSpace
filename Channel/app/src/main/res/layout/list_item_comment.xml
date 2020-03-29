@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_margin" >
+
+        <ImageView
+            android:id="@id/id_avatar"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:contentDescription="@string/img_desc"
+            android:src="@color/common_bg_top_bar" />
+
+        <TextView
+            android:id="@id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/id_avatar"
+            android:text="项目经理-张三"
+            android:textColor="@color/common_text_black_2"
+            android:textSize="@dimen/common_item_text_size" />
+
+        <TextView
+            android:id="@id/id_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:text="1小时前"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_item_text_size" />
+
+        <TextView
+            android:id="@id/id_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_marginTop="@dimen/common_margin"
+            android:layout_toRightOf="@id/id_avatar"
+            android:text="目前项目正在办理“未来护照”活动，办理该护照，最高可享受10000元的购房优惠；价格待定。"
+            android:textColor="@color/common_text_black_3"
+            android:textSize="@dimen/common_item_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

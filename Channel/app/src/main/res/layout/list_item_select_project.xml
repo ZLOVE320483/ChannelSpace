@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:padding="@dimen/common_margin" >
+    
+    <TextView
+        android:id="@id/id_project_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/common_text_black_3"
+        android:textSize="@dimen/common_text_size_3" />
+    
+    <TextView
+        android:id="@id/id_project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/common_text_black_2"
+        android:textSize="@dimen/common_text_size_2"
+        android:layout_toRightOf="@id/id_project_area"
+        android:layout_marginLeft="@dimen/common_margin" />
+    
+    <TextView
+        android:id="@id/id_customer_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/common_round_rect_bg"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="@string/customer_status_has_report"
+        android:textColor="@color/common_bg_top_bar"
+        android:textSize="@dimen/common_text_size_4" />
+
+</RelativeLayout>

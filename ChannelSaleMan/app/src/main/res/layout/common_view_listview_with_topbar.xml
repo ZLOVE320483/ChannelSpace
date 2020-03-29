@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/common_view_top_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <ListView
+        android:id="@id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/common_divider"
+        android:dividerHeight="@dimen/list_divider"
+        android:listSelector="@drawable/common_item_bg" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:padding="@dimen/common_margin" >
+
+    <TextView
+        android:id="@id/id_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我:"
+        android:textColor="@color/common_text_black_4"
+        android:textSize="@dimen/common_text_size_4" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="2015-03-26 18:40"
+        android:textColor="@color/common_text_black_4"
+        android:textSize="@dimen/common_text_size_4" />
+
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="5dp"
+        android:text="该客户可重点推荐"
+        android:textColor="#8E8E8E"
+        android:textSize="@dimen/common_text_size_5" />
+
+</RelativeLayout>

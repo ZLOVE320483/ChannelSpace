@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <include layout="@layout/common_view_top_bar" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_margin" >
+
+            <ImageView
+                android:id="@id/id_avatar"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_bg_top_bar" />
+
+            <TextView
+                android:id="@id/id_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/id_avatar"
+                android:text="楼盘名称—"
+                android:textColor="@color/common_text_black_2"
+                android:textSize="@dimen/common_item_text_size" />
+            
+            <TextView
+                android:id="@+id/dynamic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/id_name"
+                android:text="标题"
+                android:textColor="@color/common_text_green"
+                android:textSize="@dimen/common_item_text_size" />
+
+            <TextView
+                android:id="@id/id_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/id_avatar"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/id_avatar"
+                android:text="1小时前"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_item_text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/id_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin"
+            android:text="目前项目正在办理“未来护照”活动，办理该护照，最高可享受10000元的购房优惠；价格待定。"
+            android:textColor="@color/common_text_black_3"
+            android:textSize="@dimen/common_item_text_size" />
+
+        <LinearLayout
+            android:id="@+id/make_comment_or_like_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/common_margin"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/like_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_circle_make_comment"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/like_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/ic_like_hollow_tag" />
+
+                <TextView
+                    android:id="@+id/like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minWidth="20dp"
+                    android:text="赞"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/make_comment_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_circle_make_comment"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/comment_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@drawable/ic_comment_hollow_tag" />
+
+                <TextView
+                    android:id="@+id/comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minWidth="20dp"
+                    android:text="评"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

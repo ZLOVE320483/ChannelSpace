@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@id/id_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/common_text_black_2"
+            android:textSize="@dimen/common_text_size_4" />
+
+        <ImageView
+            android:id="@id/id_customer_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/id_customer_name"
+            android:contentDescription="@string/img_desc" />
+
+        <TextView
+            android:id="@id/id_customer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/id_customer_type"
+            android:textColor="@color/common_text_black_2"
+            android:textSize="@dimen/navibar_text_size" />
+
+        <TextView
+            android:id="@id/id_saleman_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/common_text_black_3"
+            android:textSize="@dimen/navibar_text_size" />
+
+        <TextView
+            android:id="@id/id_customer_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_round_rect_bg"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="@string/customer_status_report"
+            android:textColor="@color/common_bg_top_bar"
+            android:textSize="@dimen/navibar_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@id/id_top"
+        layout="@layout/common_view_top_bar" />
+
+    <ImageView
+        android:id="@id/id_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_below="@id/id_top"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <com.amap.api.maps.MapView
+        android:id="@id/id_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_divider_2"
+        android:layout_below="@id/id_divider_1" />
+
+    <ImageView
+        android:id="@id/id_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_above="@+id/bottom_container"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_confirm_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_text_green"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/id_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/cal_route"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_1" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/img_desc"
+            android:src="@color/common_divider" />
+
+        <Button
+            android:id="@id/id_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/navi_setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_1" />
+    </LinearLayout>
+
+</RelativeLayout>

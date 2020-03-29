@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin" >
+
+        <TextView
+            android:id="@id/id_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/common_text_black_2"
+            android:textSize="@dimen/common_item_text_size" />
+
+        <View
+            android:id="@id/id_divider_1"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/id_project_name"
+            android:background="@color/common_divider" />
+
+        <TextView
+            android:id="@id/id_saleman_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/id_divider_1"
+            android:textColor="@color/common_text_black_3"
+            android:textSize="@dimen/common_item_text_size" />
+
+        <ImageView
+            android:id="@+id/has_over_due"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/id_saleman_name"
+            android:visibility="gone"
+            android:src="@drawable/has_over_due"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@id/id_saleman_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/id_saleman_phone"
+            android:contentDescription="@string/img_desc"
+            android:visibility="gone"
+            android:src="@drawable/ic_saleman_message" />
+
+        <ImageView
+            android:id="@id/id_saleman_phone"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_desc"
+            android:scaleType="centerInside"
+            android:src="@drawable/friend_call" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/report_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/date_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_4" />
+
+            <TextView
+                android:id="@+id/report_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/report_date"
+                android:layout_centerHorizontal="true"
+                android:text="@string/time_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5" />
+
+            <ImageView
+                android:id="@id/id_state_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/ic_checked" />
+
+            <TextView
+                android:id="@+id/report_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/id_state_report"
+                android:background="@color/customer_state_normal_divider_color" />
+
+            <TextView
+                android:id="@+id/report_state_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:text="@string/customer_status_to_be_verify"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5" />
+
+            <TextView
+                android:id="@+id/continue_day_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/visit_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/date_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_4"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/visit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/visit_date"
+                android:layout_centerHorizontal="true"
+                android:text="@string/time_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/report_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/id_state_visit"
+                android:background="@color/customer_state_normal_divider_color" />
+
+            <ImageView
+                android:id="@+id/visit_tip_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/ic_tip" />
+
+            <ImageView
+                android:id="@id/id_state_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/ic_unchecked" />
+
+            <TextView
+                android:id="@+id/visit_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/id_state_visit"
+                android:background="@color/customer_state_normal_divider_color" />
+
+            <TextView
+                android:id="@+id/visit_state_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:text="@string/customer_status_visit"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5" />
+
+            <TextView
+                android:id="@+id/continue_day_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/form_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/date_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_4"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/form_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/form_date"
+                android:layout_centerHorizontal="true"
+                android:text="@string/time_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/visit_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/id_state_from"
+                android:background="@color/customer_state_normal_divider_color" />
+
+            <ImageView
+                android:id="@+id/form_tip_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/ic_tip"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@id/id_state_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/ic_unchecked" />
+
+            <TextView
+                android:id="@+id/form_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/id_state_from"
+                android:background="@color/customer_state_normal_divider_color" />
+
+            <TextView
+                android:id="@+id/form_state_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:text="@string/customer_status_from"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/deal_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/date_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_4"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/deal_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deal_date"
+                android:layout_centerHorizontal="true"
+                android:text="@string/time_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/form_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/id_state_deal"
+                android:background="@color/customer_state_normal_divider_color" />
+
+            <ImageView
+                android:id="@+id/deal_tip_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/ic_tip"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@id/id_state_deal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/ic_unchecked" />
+
+            <TextView
+                android:id="@+id/deal_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/id_state_deal"
+                android:background="@color/customer_state_normal_divider_color" />
+
+            <TextView
+                android:id="@+id/deal_state_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:text="@string/customer_status_deal"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/commission_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/date_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_4"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/commission_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commission_date"
+                android:layout_centerHorizontal="true"
+                android:text="@string/time_test"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/deal_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/id_state_commission"
+                android:background="@color/customer_state_normal_divider_color" />
+
+            <ImageView
+                android:id="@id/id_state_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/ic_unchecked" />
+
+            <TextView
+                android:id="@+id/commission_state_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"
+                android:text="@string/customer_status_done"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/extend_report_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_extend_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/customer_extend_report_time"
+            android:textColor="@color/common_text_black_2"
+            android:textSize="@dimen/common_text_size_3" />
+
+        <TextView
+            android:id="@+id/report_left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/id_arrow"
+            android:textColor="@color/common_bg_top_bar"
+            android:textSize="@dimen/common_text_size_4" />
+
+        <TextView
+            android:id="@+id/visit_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/id_arrow"
+            android:textColor="@color/common_bg_top_bar"
+            android:textSize="@dimen/common_text_size_4" />
+
+        <ImageView
+            android:id="@+id/id_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_desc"
+            android:src="@drawable/ic_arrow_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/extend_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <RelativeLayout
+        android:id="@+id/select_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/customer_visit_back"
+            android:textColor="@color/common_text_black_2"
+            android:textSize="@dimen/common_text_size_3" />
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/id_arrow_1"
+            android:textColor="@color/common_bg_top_bar"
+            android:textSize="@dimen/common_text_size_4" />
+
+        <ImageView
+            android:id="@+id/id_arrow_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img_desc"
+            android:src="@drawable/ic_arrow_right" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/saleman_feed_back"
+            android:textColor="@color/common_text_black_2"
+            android:textSize="@dimen/common_text_size_3" />
+
+        <TextView
+            android:id="@+id/sale_man_feed_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:text="@string/customer_intention_test"
+            android:textColor="@color/common_text_green"
+            android:textSize="@dimen/common_text_size_4" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/customer_trace_record"
+            android:textColor="@color/common_text_black_2"
+            android:textSize="@dimen/common_text_size_3" />
+
+        <TextView
+            android:id="@+id/add_customer_trace_record"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:drawableLeft="@drawable/ic_project_add"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_hint_text_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <RelativeLayout
+        android:id="@+id/no_record_cotainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_trace_record"
+                android:textColor="@color/common_text_black_4"
+                android:textSize="@dimen/common_text_size_5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/record_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/id_user_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_text_size_4" />
+
+        <TextView
+            android:id="@+id/tv_time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_text_size_4" />
+
+        <TextView
+            android:id="@+id/tv_record_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time_1"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_text_size_5" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/record_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/record_container_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/id_user_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_test"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_text_size_4" />
+
+        <TextView
+            android:id="@+id/tv_time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_text_size_4" />
+
+        <TextView
+            android:id="@+id/tv_record_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time_2"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_text_size_5" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/record_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/customer_more_record_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_item_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/customer_trace_record_more"
+            android:textColor="@color/common_text_black_4"
+            android:textSize="@dimen/common_hint_text_size" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_bg_content" />
+
+</LinearLayout>

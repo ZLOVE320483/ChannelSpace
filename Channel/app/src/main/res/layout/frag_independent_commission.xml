@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_view_top_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_margin" >
+
+            <TextView
+                android:id="@+id/not_settle_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:text="@string/no_settle_commission"
+                android:textColor="@color/common_text_black_2"
+                android:textSize="@dimen/common_item_text_size" />
+
+            <TextView
+                android:id="@+id/tv_not_settle_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/not_settle_commission"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_toRightOf="@+id/not_settle_commission"
+                android:text="@string/no_settle_commission"
+                android:textColor="#ff9833"
+                android:textSize="@dimen/confirm_button_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_margin" >
+
+            <TextView
+                android:id="@+id/total_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/total_commission"
+                android:textColor="@color/common_text_black_2"
+                android:textSize="@dimen/common_item_text_size" />
+
+            <TextView
+                android:id="@+id/tv_total_commission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/total_commission"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_toRightOf="@+id/total_commission"
+                android:text="@string/total_commission"
+                android:textColor="#4dd0c8"
+                android:textSize="@dimen/confirm_button_text_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@color/common_text_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@color/common_text_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@color/common_text_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@color/common_text_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/img_desc"
+                    android:src="@color/common_text_green" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/customer_status_report"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_hint_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/customer_status_visit"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_hint_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/customer_status_from"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_hint_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/customer_status_appointment"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_hint_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/customer_status_deal"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_hint_text_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider"
+            android:layout_marginTop="@dimen/common_margin"
+            android:contentDescription="@string/img_desc"
+            android:src="@color/common_divider" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">多接客</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- AlertDialog -->
+    <string name="tips">提示</string>
+    <string name="positive">确定</string>
+
+    <!-- Common -->
+    <string name="img_desc"></string>
+    <string name="net_break_tips">您的网络已断开,请检查您的网络设置</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="submit">提交</string>
+    <string name="save">保存</string>
+    <string name="photo_take">手机拍照</string>
+    <string name="photo_pic">我的相册</string>
+    <string name="gender">性别</string>
+    <string name="gender_man">男</string>
+    <string name="gender_woman">女</string>
+    <string name="from">来源</string>
+    <string name="from_tel">来电</string>
+    <string name="from_visit">来访</string>
+    <string name="price">价格</string>
+    <string name="next">下一步</string>
+    <string name="call_log">通话记录</string>
+    <string name="contact">通讯录</string>
+    <string name="name">姓名</string>
+    <string name="telephone">电话</string>
+    <string name="required">必填</string>
+    <string name="optional">选填</string>
+    <string name="send">发送</string>
+    <string name="other">其他</string>
+    <string name="gender_sir">先生</string>
+    <string name="gender_lady">女士</string>
+    <string name="project_img_detail_effect">效果图</string>
+    <string name="project_img_detail_model">样板图</string>
+    <string name="project_img_detail_layout">户型图</string>
+    <string name="confirm_visit">确认到访</string>
+    <string name="donot_visit">未到访</string>
+
+    <!-- Login -->
+    <string name="login">登录</string>
+    <string name="first_login">首次登录</string>
+    <string name="register">注册</string>
+    <string name="quick_register">立即注册</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="find_back_pwd">找回密码</string>
+    <string name="account_hint">请输入手机号</string>
+    <string name="new_account_hint">新手机号码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="current_pwd">当前密码</string>
+    <string name="confirm_pwd">请再次输入密码</string>
+    <string name="new_password_hint">请输入新密码</string>
+    <string name="confirm_new_pwd">请确认新密码</string>
+    <string name="verify_code_hint">请输入验证码</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="account_check">非法账号,请检查您的账号</string>
+    <string name="password_check">请输入6&#8211;16位密码</string>
+    <string name="user_real_name">请输入真实姓名</string>
+    <string name="register_request">注册代表同意用户协议</string>
+    <string name="common_no_data">暂无相关信息</string>
+
+    <!-- Main -->
+    <string name="main_bottom_tab_customer">客户</string>
+    <string name="main_bottom_tab_project">楼盘</string>
+    <string name="main_bottom_tab_todo">消息</string>
+    <string name="main_bottom_tab_friend">好友</string>
+    <string name="main_bottom_tab_me">我</string>
+
+    <!-- Customer -->
+    <string name="customer_add_name">请输入姓名</string>
+    <string name="customer_add_phone">请输入电话号码</string>
+    <string name="verify_to_confirm">待确认</string>
+    <string name="visit_tips">张三：报备的李四先生到访</string>
+    <string name="customer_trace_tips">张三：这个客户可能要买,请注意</string>
+    <string name="customer_intention_short">客户意向:</string>
+    <string name="customer_intention">客户意向(必填)</string>
+    <string name="customer_intention_a">意向很好</string>
+    <string name="customer_intention_b">意向一般</string>
+    <string name="customer_intention_c">意向差</string>
+    <string name="customer_intention_d">无效客户</string>
+    <string name="customer_status_report">报备</string>
+    <string name="customer_status_visit">到访</string>
+    <string name="customer_status_from">认筹</string>
+    <string name="customer_status_appointment">预约</string>
+    <string name="customer_status_deal">成交</string>
+    <string name="customer_channel">客户认知渠道</string>
+    <string name="customer_visit_back">设置回访客户时间</string>
+    <string name="customer_is_effect">客户是否有效</string>
+    <string name="customer_status_to_be_verify">待验证</string>
+    <string name="report_status_to_be_verify">报备待验证</string>
+    <string name="visit_status_to_be_verify">到访待验证</string>
+    <string name="customer_effect_judge">判断</string>
+    <string name="customer_trace_record">客户回访记录</string>
+    <string name="customer_effect">有效客户</string>
+    <string name="customer_invalid">无效客户</string>
+    <string name="customer_intention_filter">意向强度</string>
+    <string name="customer_status">客户进度</string>
+    <string name="customer_status_done">结佣</string>
+    <string name="customer_record">客户记录</string>
+    <string name="customer_add_record">请输入客户记录</string>
+    <string name="report_status_effect">有效</string>
+    <string name="report_status_no_effect">无效</string>
+    <string name="no_trace_record">暂无客户纪录</string>
+    <string name="customer_trace_record_more">查看更多记录</string>
+
+    <!-- Project -->
+    <string name="project_add_customer">加客户</string>
+    <string name="project_parameter">楼盘参数</string>
+    <string name="project_add_saleman">添加客户</string>
+    <string name="project_add_hint">请输入楼盘代码</string>
+    <string name="project_add_customer_direct">直接添加</string>
+    <string name="project_add_customer_from_list">从我的客户添加</string>
+    <string name="project_all">全部</string>
+    <string name="project_area">区域</string>
+    <string name="project_area_xinqu">高新区</string>
+    <string name="project_area_yuanqu">园区</string>
+    <string name="project_area_xiangcheng">相城区</string>
+    <string name="project_area_gusu">姑苏区</string>
+    <string name="project_area_pingjiang">平江区</string>
+    <string name="project_area_wujiang">吴江区</string>
+    <string name="project_area_wuzhong">吴中区</string>
+    <string name="project_layout">户型</string>
+    <string name="project_layout_one">一室</string>
+    <string name="project_layout_two">两室</string>
+    <string name="project_layout_three">三室</string>
+    <string name="project_layout_four">四室</string>
+    <string name="project_layout_five">五室</string>
+    <string name="project_layout_five_more">五室以上</string>
+    <string name="project_type">类型</string>
+    <string name="project_type_high">高层</string>
+    <string name="project_type_multy">多层</string>
+    <string name="project_type_stack">叠墅</string>
+    <string name="project_type_house">别墅</string>
+    <string name="project_type_apart">公寓</string>
+    <string name="project_type_office">写字楼</string>
+    <string name="project_type_shop">商铺</string>
+    <string name="project_attention">关注</string>
+    <string name="project_unattention">非关注</string>
+    <string name="project_price">总价(万元)</string>
+    <string name="project_price_min">0</string>
+    <string name="project_price_to">—</string>
+    <string name="project_price_max">不限</string>
+    <string name="project_address">楼盘地址</string>
+    <string name="project_cooperate_commission">合作佣金</string>
+    <string name="project_report_customer">报备该项目的客户</string>
+    <string name="project_discount">案场优惠</string>
+    <string name="main_house_layout">主力户型</string>
+
+    <!-- Cooperate Rule -->
+    <string name="cooperate_rule_now">本期规则</string>
+    <string name="cooperate_rule_first_commission">首期佣金:</string>
+    <string name="cooperate_rule_tail_commission">后期佣金:</string>
+    <string name="cooperate_rule_commission_point">佣金结点:</string>
+    <string name="cooperate_rule_pay_type">*本期付款方:</string>
+    <string name="cooperate_rule_time">合作时间:</string>
+    <string name="cooperate_rule">合作规则:</string>
+    <string name="cooperate_rule_before">以往规则</string>
+
+    <!-- Project Parameter -->
+    <string name="project_basic_parameter">基本参数</string>
+    <string name="project_paramaeter_price">价格:</string>
+    <string name="project_paramaeter_property_type">物业类型:</string>
+    <string name="project_paramaeter_decoration">装修情况:</string>
+    <string name="project_paramaeter_property_price">物业费:</string>
+    <string name="project_paramaeter_area">面积:</string>
+    <string name="project_paramaeter_product">产品:</string>
+    <string name="project_paramaeter_house_rate">得房率:</string>
+    <string name="project_paramaeter_plot_rate">容积率:</string>
+    <string name="project_paramaeter_total_area">总建面积:</string>
+    <string name="project_paramaeter_total_floor_area">总占地:</string>
+    <string name="project_paramaeter_total_set">总套数:</string>
+    <string name="project_paramaeter_sale_set">已售套数:</string>
+    <string name="project_paramaeter_park_space">车位配比:</string>
+    <string name="project_paramaeter_open">开盘时间:</string>
+    <string name="project_paramaeter_ckeck_in">入住时间:</string>
+    <string name="project_paramaeter_developer">开发商:</string>
+    <string name="project_paramaeter_property_corp">物业公司:</string>
+    <string name="project_paramaeter_address">地址:</string>
+    <string name="project_paramaeter_introduce">项目简介:</string>
+    <string name="project_paramaeter_supporting">配套:</string>
+    <string name="project_paramaeter_traffic">交通:</string>
+    <string name="project_paramaeter_medical">医疗:</string>
+    <string name="project_paramaeter_school">学校:</string>
+    <string name="project_paramaeter_shop">商业:</string>
+    <string name="customer_detail_project_area">区域:</string>
+    <string name="customer_detail_project_price">总价:</string>
+    <string name="customer_detail_project_layout">户型:</string>
+    <string name="customer_detail_project_type">类型:</string>
+    <string name="customer_from_type">来源:</string>
+
+    <!-- Message -->
+    <string name="message_new_customer">新增客户</string>
+    <string name="message_contact_customer">联系客户</string>
+    <string name="message_customer_progress">客户进度</string>
+    <string name="message_customer_trace">客户追踪</string>
+    <string name="message_project_dynamic">楼盘动态</string>
+    <string name="message_cooperate_rule">合作规则</string>
+
+    <!-- Me -->
+    <string name="user_info">个人设置</string>
+    <string name="app_message">站内消息</string>
+    <string name="my_project">我的楼盘</string>
+    <string name="function_introdution">功能介绍</string>
+    <string name="user_protocol">用户协议</string>
+    <string name="user_exit">退出登录</string>
+    <string name="user_check_version">检查更新</string>
+    <string name="app_about">关于我们</string>
+    <string name="user_feedback">用户反馈</string>
+    <string name="user_feedback_hint">请输入您对产品的意见和建议</string>
+    <string name="user_avatar">头像</string>
+    <string name="user_name">真实姓名</string>
+    <string name="user_gender">性别</string>
+    <string name="user_phone">电话</string>
+    <string name="user_modify_pwd">修改密码</string>
+    <string name="change_project">切换楼盘</string>
+    
+    <!-- Friend  -->
+    <string name="friend_degree">好友等级</string>
+    <string name="friend_degree_a">A</string>
+    <string name="friend_degree_b">B</string>
+    <string name="friend_degree_c">C</string>
+    <string name="friend_degree_d">D</string>
+
+    <!-- Test -->
+    <string name="launch_test">启动页</string>
+    <string name="date_test">5-26</string>
+    <string name="time_test">10:11</string>
+    <string name="date_test_1">2015-05-26</string>
+    <string name="date_time_test">2015-05-26 10:00</string>
+    <string name="name_test">章磊</string>
+    <string name="independent_name_test">经纪人：章磊</string>
+    <string name="phone_num_test">13260738319</string>
+    <string name="price_test">99万</string>
+    <string name="project_name_test">阳光天地</string>
+    <string name="project_price_test">1.2万/平米</string>
+    <string name="saleman_name_test">张三</string>
+    <string name="count_test">8</string>
+    <string name="project_address_test">新庄立交和西园路交汇处</string>
+    <string name="back_time_visit_test">回访时间：2015-06-06 13:00</string>
+    <string name="state_test">到访—</string>
+    <string name="project_dynamic_name_test">阳光天地—</string>
+    <string name="project_dynamic_theme_test">六月大降价</string>
+    <string name="project_dynamic_content_test">六月该楼盘将持续降价3万余元......</string>
+    <string name="rule_name_test">高层佣金1.3万每套</string>
+    <string name="report_test">报备:20</string>
+    <string name="visit_test">到访:20</string>
+    <string name="deal_test">成交:20</string>
+    <string name="commision_test">结佣:20</string>
+    <string name="friend_grade_test">B</string>
+    <string name="friend_report_test">他报备了:20组</string>
+    <string name="independent_name_test_1">张三:</string>
+    <string name="project_paramaeter_decoration_test">联排  独栋</string>
+    <string name="project_paramaeter_property_test">5.58元/平方米·月</string>
+    <string name="cooperate_rule_title_test">高层8000元/套</string>
+    <string name="cooperate_rule_first_commission_test">高层佣金6000元/套    洋房佣金9000元/套</string>
+    <string name="cooperate_rule_commission_point_test">签约后付首期    款清后付尾款</string>
+    <string name="cooperate_rule_pay_type_test">开发商</string>
+    <string name="cooperate_rule_time_test">2015-05-06 —— 2015-06-20</string>
+    <string name="effective_left_time_test">剩余6天</string>
+    <string name="project_paramaeter_traffic_test">交通轨道1号线</string>
+    
+    <!-- PullListView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_footer_hint_normal">上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_hint_loading">正在加载&#8230;</string>
+    <string name="no_data_indicator">暂无数据</string>
+
+</resources>

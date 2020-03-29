@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_view_top_bar_confirm" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+    
+    
+    <ListView
+        android:id="@id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:background="@color/white"
+        android:listSelector="@drawable/common_item_bg" />
+
+    <RelativeLayout
+        android:id="@+id/no_bank_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size_3"
+                android:textColor="@color/common_text_black_5"
+                android:text="@string/common_no_bank_tip" />
+            
+            <Button
+                android:id="@+id/btn_add_bank"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="@dimen/common_text_size_3"
+                android:textColor="@color/common_text_black_5"
+                android:layout_marginTop="20dp"
+                android:text="@string/add_bank"
+                android:background="@drawable/common_round_rect_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

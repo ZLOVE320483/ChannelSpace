@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/id_top"
+        layout="@layout/common_view_top_bar" />
+
+    <ImageView
+        android:id="@id/id_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_below="@id/id_top"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <com.zlove.base.widget.pulllistview.PullListView
+        android:id="@id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_confirm"
+        android:layout_below="@id/id_divider_1"
+        android:background="@color/white"
+        android:divider="@null"
+        android:headerDividersEnabled="false" />
+
+    <Button
+        android:id="@id/id_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_confirm_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_text_green"
+        android:text="@string/report_project"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size_1" />
+
+</RelativeLayout>

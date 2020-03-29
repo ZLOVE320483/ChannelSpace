@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_view_top_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_content"
+        android:fillViewport="true"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:text="@string/customer_intention_filter"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_text_size_4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+
+                <CheckBox
+                    android:id="@id/id_customer_intention_all"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_all" />
+
+                <CheckBox
+                    android:id="@id/id_customer_intention_a"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customer_intention_a" />
+
+                <CheckBox
+                    android:id="@id/id_customer_intention_b"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customer_intention_b" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+
+                <CheckBox
+                    android:id="@id/id_customer_intention_c"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customer_intention_c" />
+
+                <CheckBox
+                    android:id="@id/id_customer_intention_d"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customer_intention_d" />
+
+                <CheckBox
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_area_pingjiang"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:text="@string/project_layout"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_text_size_4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+
+                <CheckBox
+                    android:id="@+id/rb_project_layout_all"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_all" />
+
+                <CheckBox
+                    android:id="@+id/rb_project_layout_one"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_layout_one" />
+
+                <CheckBox
+                    android:id="@+id/rb_project_layout_two"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_layout_two" />
+
+                <CheckBox
+                    android:id="@+id/rb_project_layout_three"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_layout_three" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+
+                <CheckBox
+                    android:id="@+id/rb_project_layout_four"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_layout_four" />
+                
+                <CheckBox
+                    android:id="@+id/rb_project_layout_five"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_layout_five" />
+
+                <CheckBox
+                    android:id="@+id/rb_project_layout_five_more"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:text="@string/project_layout_five_more" />
+
+                <CheckBox
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:text="@string/project_layout_three" />
+            </LinearLayout>
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:text="@string/project_type"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_text_size_4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+
+                <CheckBox
+                    android:id="@+id/rb_house_type_all"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_all" />
+
+                <CheckBox
+                    android:id="@+id/rb_house_type_high"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_type_high" />
+
+                <CheckBox
+                    android:id="@+id/rb_house_type_multy"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_type_multy" />
+
+                <CheckBox
+                    android:id="@+id/rb_house_type_stack"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_type_stack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+
+                <CheckBox
+                    android:id="@+id/rb_house_type_house"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_type_house" />
+
+                <CheckBox
+                    android:id="@+id/rb_house_type_apart"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_type_apart" />
+
+                <CheckBox
+                    android:id="@+id/rb_house_type_office"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_type_office" />
+
+                <CheckBox
+                    android:id="@+id/rb_house_type_shop"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_type_shop" />
+            </LinearLayout>
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:text="@string/customer_status"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_text_size_4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+
+                <CheckBox
+                    android:id="@+id/rb_customer_status_all"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_all" />
+                
+                
+                <CheckBox
+                    android:id="@+id/rb_customer_status_report_to_be_verify"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/report_status_to_be_verify" />
+                
+                <CheckBox
+                    android:id="@+id/rb_customer_status_effect"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/report_status_effect" />
+
+                <CheckBox
+                    android:id="@+id/rb_customer_visit_status_to_be_verify"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/visit_status_to_be_verify" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+                
+                <CheckBox
+                    android:id="@+id/rb_customer_status_visit"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customer_status_visit" />
+
+                <CheckBox
+                    android:id="@+id/rb_customer_status_form"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customer_status_from" />
+
+                <CheckBox
+                    android:id="@+id/rb_customer_status_deal"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customer_status_deal" />
+
+                <CheckBox
+                    android:id="@+id/rb_customer_status_done"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/customer_status_done" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margin"
+                android:text="有效性"
+                android:textColor="@color/common_text_black_3"
+                android:textSize="@dimen/common_text_size_4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_margin" >
+
+                <CheckBox
+                    android:id="@+id/rb_customer_effect_all"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/project_all" />
+
+                <CheckBox
+                    android:id="@+id/rb_customer_effect_yes"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="已过期" />
+
+                <CheckBox
+                    android:id="@+id/rb_customer_effect_no"
+                    style="@style/customer_intention_select"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="未过期" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_divider"
+                android:contentDescription="@string/img_desc"
+                android:src="@color/common_divider" />
+
+            <Button
+                android:id="@id/id_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/common_green_btn_bg"
+                android:text="@string/confirm"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/common_text_size_1" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

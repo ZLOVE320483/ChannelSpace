@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/black">
+    
+    <ImageView
+            android:id="@id/id_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/img_desc"
+            android:src="@drawable/common_img_back" />
+
+    <LinearLayout
+        android:id="@id/id_framework"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@id/id_back"
+        android:background="@color/black"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/id_effect"
+            style="@style/img_detail_bottom_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/img_detail_tab_bg"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/project_img_detail_effect" />
+
+        <RadioButton
+            android:id="@+id/id_model"
+            style="@style/img_detail_bottom_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/img_detail_tab_bg"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/project_img_detail_model" />
+
+        <RadioButton
+            android:id="@+id/id_layout"
+            style="@style/img_detail_bottom_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/img_detail_tab_bg"
+            android:gravity="center"
+            android:text="@string/project_img_detail_layout" />
+    </LinearLayout>
+
+</RelativeLayout>

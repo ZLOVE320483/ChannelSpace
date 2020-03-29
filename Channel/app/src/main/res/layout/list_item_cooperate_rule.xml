@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/common_margin"
+        android:paddingRight="@dimen/common_margin" >
+
+        <RelativeLayout
+            android:id="@+id/name_container"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/id_rule_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/common_text_black_2"
+                android:textSize="@dimen/common_text_size_2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/name_container" >
+            
+            <TextView
+                android:id="@id/id_project_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_text_size_4"
+                android:textColor="@color/common_text_green" />
+            
+
+            <TextView
+                android:id="@id/id_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/id_project_name"
+                android:layout_toRightOf="@id/id_project_name"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:textSize="@dimen/common_text_size_4"
+                android:textColor="@color/common_text_black_4" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

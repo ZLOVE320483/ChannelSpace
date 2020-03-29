@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_content" >
+
+    <include
+        android:id="@id/id_top"
+        layout="@layout/common_view_top_bar" />
+
+    <ImageView
+        android:id="@id/id_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_below="@id/id_top"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <com.amap.api.maps.MapView
+        android:id="@id/id_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_divider_1"
+        android:layout_above="@id/id_divider_2" />
+    
+    <ImageView
+        android:id="@id/id_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_above="@+id/route_info_container"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+    
+    <RelativeLayout
+        android:id="@+id/route_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/common_margin" >
+        
+        <TextView
+            android:id="@+id/route_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_hint_text_size"
+            android:textColor="@color/common_text_green"
+            android:text="@string/account_check"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+        
+        <TextView
+            android:id="@+id/route_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_hint_text_size"
+            android:textColor="@color/common_text_green"
+            android:text="@string/account_check"
+            android:layout_below="@+id/route_length"
+            android:layout_marginTop="5dp" />
+        
+        <TextView
+            android:id="@+id/route_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_hint_text_size"
+            android:textColor="@color/common_text_green"
+            android:text="@string/account_check"
+            android:layout_below="@+id/route_time"
+            android:layout_marginTop="5dp" />
+        
+        <Button
+            android:id="@id/id_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin"
+            android:text="@string/start_navi"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:background="@drawable/common_green_btn_bg" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

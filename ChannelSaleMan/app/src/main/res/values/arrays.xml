@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="customer_channel">
+        <item>报纸</item>
+        <item>电视</item>
+        <item>电台</item>
+        <item>电商</item>
+        <item>杂志</item>
+        <item>网络</item>
+        <item>路过</item>
+        <item>户外广告</item>
+        <item>朋友推荐</item>
+        <item>现场围挡</item>
+        <item>商超巡展</item>
+        <item>电话call客</item>
+        <item>短信微信</item>
+        <item>员工介绍</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@id/id_framework"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_divider"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_above="@+id/ll_bottom"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+    <RadioGroup
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp" >
+
+        <RadioButton
+            android:id="@id/id_todo"
+            style="@style/main_bottom_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:drawableTop="@drawable/ic_main_tab_message"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="@string/main_bottom_tab_todo" />
+
+        <RadioButton
+            android:id="@id/id_customer"
+            style="@style/main_bottom_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_main_tab_customer"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="@string/main_bottom_tab_customer" />
+
+        <RadioButton
+            android:id="@id/id_friend"
+            style="@style/main_bottom_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_main_tab_friend"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="@string/main_bottom_tab_friend" />
+
+        <RadioButton
+            android:id="@id/id_me"
+            style="@style/main_bottom_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_main_tab_me"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:text="@string/main_bottom_tab_me" />
+    </RadioGroup>
+
+</RelativeLayout>

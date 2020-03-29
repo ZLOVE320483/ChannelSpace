@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical" >
+
+    <com.zlove.base.widget.pulllistview.PullListView
+        android:id="@id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@drawable/common_list_divider"
+        android:dividerHeight="@dimen/list_divider"
+        android:headerDividersEnabled="false"
+        android:layout_above="@+id/bottom"
+        android:listSelector="@android:color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/common_confirm_button_height"
+            android:background="@color/common_text_green"
+            android:text="@string/project_hot_line"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_3" />
+        
+        <ImageView
+            android:layout_width="@dimen/list_divider"
+            android:layout_height="match_parent"
+            android:src="@color/white"
+            android:contentDescription="@string/img_desc" />
+        
+        <Button
+            android:id="@+id/add_customer_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/common_confirm_button_height"
+            android:background="@color/common_text_green"
+            android:text="@string/report_customer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size_3" />
+
+    </LinearLayout>
+
+</RelativeLayout>

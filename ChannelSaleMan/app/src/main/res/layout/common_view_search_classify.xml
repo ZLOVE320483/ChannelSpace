@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_top_bar_height"
+    android:background="@color/common_bg_content"
+    android:paddingLeft="@dimen/common_margin"
+    android:paddingRight="@dimen/common_margin" >
+
+    <TextView
+        android:id="@id/id_search"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_toLeftOf="@id/id_classify"
+        android:background="@drawable/common_search_bg"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="6dp"
+        android:hint="@string/img_desc"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/common_hint_color"
+        android:textSize="@dimen/common_hint_text_size" />
+
+    <Button
+        android:id="@id/id_classify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_classify" />
+
+</RelativeLayout>

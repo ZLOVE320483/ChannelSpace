@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:background="@drawable/common_photo_dialog_bg"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/confirm_visit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_height"
+            android:background="@android:color/transparent"
+            android:text="@string/confirm_visit"
+            android:textColor="@color/common_text_green"
+            android:textSize="@dimen/common_item_text_size" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider"
+            android:contentDescription="@string/img_desc"
+            android:src="@color/common_divider" />
+
+        <Button
+            android:id="@+id/do_not_visit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_height"
+            android:background="@android:color/transparent"
+            android:text="@string/donot_visit"
+            android:textColor="@color/common_text_green"
+            android:textSize="@dimen/common_item_text_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/id_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:background="@drawable/common_photo_dialog_bg"
+        android:text="@string/cancel"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/common_text_green"
+        android:textSize="@dimen/common_item_text_size" />
+
+</LinearLayout>

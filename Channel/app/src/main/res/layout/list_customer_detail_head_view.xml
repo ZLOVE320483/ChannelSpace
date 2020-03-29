@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/common_bg_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/common_margin"
+            android:paddingRight="@dimen/common_margin">
+
+            <TextView
+                android:id="@id/id_customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/common_text_black_2"
+                android:textSize="@dimen/common_text_size_1"/>
+
+            <TextView
+                android:id="@id/id_customer_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_customer_name"
+                android:layout_marginTop="10dp"
+                android:textColor="#8E8E8E"
+                android:textSize="@dimen/common_text_size_3"/>
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_customer_phone"
+                android:layout_marginTop="5dp"
+                android:text="@string/customer_intention_short"
+                android:textColor="@color/common_hint_color"
+                android:textSize="@dimen/common_text_size_4"/>
+
+            <ImageView
+                android:id="@+id/customer_intention_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_customer_phone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/tag"
+                android:contentDescription="@string/img_desc"/>
+
+            <TextView
+                android:id="@id/id_customer_intention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_customer_phone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/customer_intention_icon"
+                android:textColor="@color/common_hint_color"
+                android:textSize="@dimen/common_text_size_4"/>
+
+            <ImageView
+                android:id="@id/id_customer_message"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/id_customer_call"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/friend_message"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@id/id_customer_call"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/friend_call"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_divider"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:contentDescription="@string/img_desc"
+            android:src="@color/common_divider"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@color/white"
+            android:paddingLeft="12dp"
+            android:paddingRight="22dp">
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/customer_detail_project_area"
+                android:textColor="@color/common_text_black_1"
+                android:textSize="@dimen/common_text_size_4"/>
+
+            <TextView
+                android:id="@id/id_project_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_area"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/tv_area"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:textColor="#8E8E8E"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_area"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@id/id_project_price"
+                android:text="@string/customer_detail_project_price"
+                android:textColor="@color/common_text_black_1"
+                android:textSize="@dimen/common_text_size_4"/>
+
+            <TextView
+                android:id="@id/id_project_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_area"
+                android:layout_marginRight="50dp"
+                android:textColor="#8E8E8E"/>
+
+            <TextView
+                android:id="@+id/tv_house_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_area"
+                android:layout_marginTop="16dp"
+                android:text="@string/customer_detail_project_layout"
+                android:textColor="@color/common_text_black_1"
+                android:textSize="@dimen/common_text_size_4"/>
+
+            <TextView
+                android:id="@id/id_project_house_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_house_layout"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/tv_house_layout"
+                android:textColor="#8E8E8E"/>
+
+            <TextView
+                android:id="@+id/tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_price"
+                android:layout_alignTop="@+id/tv_house_layout"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@id/id_project_product"
+                android:text="@string/customer_detail_project_type"
+                android:textColor="@color/common_text_black_1"
+                android:textSize="@dimen/common_text_size_4"/>
+
+            <TextView
+                android:id="@id/id_project_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/id_project_price"
+                android:layout_alignTop="@+id/tv_house_layout"
+                android:layout_marginRight="16dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="#8E8E8E"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_divider"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/img_desc"
+        android:src="@color/common_divider" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundProgress="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/common_bg_content" >
+
+        <TextView
+            android:id="@+id/indivating_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:minWidth="80dp"
+            android:text="@string/xlistview_header_hint_normal"
+            android:textColor="@color/common_text_black_3" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toLeftOf="@id/indivating_text" >
+
+            <com.zlove.base.widget.pulllistview.CircleProgress
+                android:id="@+id/circle_pregress_bar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                roundProgress:Inside_Interval="5"
+                roundProgress:Paint_Color="@color/common_text_green"
+                roundProgress:Paint_Width="3"
+                roundProgress:circle_progress_max="100"
+                roundProgress:fill="false" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_green_arrow_down"
+                android:contentDescription="@string/img_desc" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
